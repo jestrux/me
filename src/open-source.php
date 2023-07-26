@@ -35,7 +35,7 @@ $work = [
         "title" => "Pisatch(Menubar app for Mac for quickly selecting images)",
         "info" => [
             "tech" => "Electron, Unsplash, Vanilla JS",
-            "demo" => "https://github.com/jestrux/pisatch/blob/master/preview.gif?raw=true",
+            "demo" => "https://user-images.githubusercontent.com/8426172/256296575-80cbb9b5-8cf3-41d6-83fe-e4f176d28070.mp4",
             "code" => "https://github.com/jestrux/pisatch",
         ]
     ],
