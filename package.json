@@ -1,0 +1,23 @@
+{
+	"name": "me",
+	"version": "1.0.0",
+	"description": "",
+	"main": "tailwind.config.js",
+	"scripts": {
+		"dev": "npx tailwindcss -i ./src/input.css -o ./docs/styles.css --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jestrux/me.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jestrux/me/issues"
+	},
+	"homepage": "https://github.com/jestrux/me#readme",
+	"devDependencies": {
+		"tailwindcss": "^3.3.3"
+	}
+}

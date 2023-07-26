@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.container {
+		@apply mx-auto;
+	}
+
+	@media (min-width: 1441px) {
+		.container {
+			max-width: 1440px !important;
+		}
+	}
+
+	:root {
+		--primary-color: #855a0b;
+	}
+
+	.btn {
+		@apply tracking-tight transition-colors duration-150 inline-flex text-lg text-white font-semibold items-center justify-center px-5 py-2.5 border rounded-full bg-primary hover:bg-primary-dark border-primary;
+	}
+
+	body {
+		overflow-x: hidden;
+	}
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+}
+
+.flex > * {
+	min-width: 0;
+}
