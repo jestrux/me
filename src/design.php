@@ -17,15 +17,16 @@ $work = [
 <section class="mt-10">
     <h3 class="text-3xl font-bold text-yellow-900">Design</h3>
 
-    <div class="mt-4 text-lg/loose">
+    <div class="mt-4 text-lg/relaxed">
 
         <p class="">
-            I have a keen eye for detail and have been cultivating my UI/UX design skills for years. To stay relevant, I also spend a decent amount of time keeping up with modern design practices.
+            I have a keen eye for detail and have been cultivating my UI/UX design skills for years.
+            <!-- To stay relevant, I also spend a decent amount of time keeping up with modern design practices. -->
         </p>
 
-        <p class="mt-4">
+        <!-- <p class="mt-4">
             Here are some of my design-related pieces:
-        </p>
+        </p> -->
 
         <ul class="mt-6 flex flex-col md:grid grid-cols-2 gap-6">
             <?php
@@ -33,14 +34,20 @@ $work = [
                 $label = strpos($entry['link'], 'medium') ? "Read blog" : "Watch video";
 
                 echo <<<HTML
-                    <li class="space-y-1 pt-4 border-t border-black/25">
-                        <p>
-                        {$entry['description']}
-                        </p>
+                    <li>
+                        <div class="mb-3 bg-black/5 border rounded w-full aspect-[2/1]">
+                            
+                        </div>
 
-                        <a class="leading-none h-8 inline-flex items-center rounded text-base font-bold underline" href="{$entry['link']}" target="_blank">
-                            $label
-                        </a>
+                        <div class="space-y-3">
+                            <p>
+                            {$entry['description']}
+                            </p>
+
+                            <a class="leading-none h-8 inline-flex items-center rounded text-base font-bold underline" href="{$entry['link']}" target="_blank">
+                                $label
+                            </a>
+                        </div>
                     </li>
                     HTML;
             }

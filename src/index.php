@@ -10,11 +10,12 @@ include('_partials/header.php');
         <div class="my-14 mx-auto max-w-5xl px-6">
             <?php
             include('banner.php');
+            include('skills.php');
             include('work.php');
             include('design.php');
-            include('tutorials.php');
             include('open-source.php');
-            // include('backend.php');
+            include('backend.php');
+            include('tutorials.php');
             ?>
         </div>
     </main>

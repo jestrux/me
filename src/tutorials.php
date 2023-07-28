@@ -38,21 +38,27 @@ $work = [
     <div class="mt-4 text-lg/loose">
 
         <p class="">
-            When not writing code, I also enjoy making tutorials both for libraries I’ve created as well as general development and design tutorials.
+            When not writing code, I make tutorials for tools I create and general development and design tips.
         </p>
 
         <ul class="mt-6 flex flex-col md:grid grid-cols-2 gap-6">
             <?php
             foreach ($work as $entry) {
                 echo <<<HTML
-                    <li class="space-y-1 pt-4 border-t border-black/25">
-                        <span class="h-6 pt-px inline-flex items-center px-2.5 text-xs font-bold uppercase tracking-widest rounded-full border border-black/30">
-                            {$entry['type']}
-                        </span>
-                        <p>
-                        {$entry['description']}
-                        </p>
-                        <a class="leading-none h-8 inline-flex items-center rounded text-base font-bold underline" href="{$entry['link']}" target="_blank">Watch video</a>
+                    <li>
+                        <div class="mb-3 bg-black/5 border rounded w-full aspect-[2/1]">
+                            
+                        </div>
+
+                        <div class="space-y-3">
+                            <span class="h-6 pt-px inline-flex items-center px-2.5 text-xs font-bold uppercase tracking-widest rounded-full border border-black/30">
+                                {$entry['type']}
+                            </span>
+                            <p>
+                            {$entry['description']}
+                            </p>
+                            <a class="leading-none h-8 inline-flex items-center rounded text-base font-bold underline" href="{$entry['link']}" target="_blank">Watch video</a>
+                        </div>
                     </li>
                     HTML;
             }

@@ -3,7 +3,7 @@ $work = [
     [
         "title" => "Articulate(Content generation library)",
         "info" => [
-            "tech" => "Tech: Preact, Rollup",
+            "tech" => "Preact, Rollup",
             "demo" => "https://www.youtube.com/watch?v=ZHO5LkB3R4o",
             "code" => "https://github.com/jestrux/articulate",
         ]
@@ -44,11 +44,11 @@ $work = [
 <section class="mt-10">
     <h3 class="text-3xl font-bold text-yellow-900">Open source work</h3>
 
-    <div class="mt-4 text-lg/loose">
+    <div class="mt-4 text-lg/relaxed">
 
-        <p class="">
+        <!-- <p class="">
             Here are some open-source projects I've worked on
-        </p>
+        </p> -->
 
         <ul class="mt-6 flex flex-col md:grid grid-cols-2 gap-6">
             <?php
@@ -72,13 +72,19 @@ $work = [
                 }
 
                 echo <<<HTML
-                    <li class="space-y-1 pt-4 border-t border-black/25">
-                        <p>
-                        {$entry['title']}
-                        </p>
-                        <ul class="flex flex-wrap items-center gap-x-3">
-                            {$info}
-                        </ul>
+                    <li>
+                        <div class="mb-3 bg-black/5 border rounded w-full aspect-[2/1]">
+                            
+                        </div>
+
+                        <div class="space-y-3">
+                            <p>
+                            {$entry['title']}
+                            </p>
+                            <ul class="flex flex-wrap items-center gap-x-3">
+                                {$info}
+                            </ul>
+                        </div>
                     </li>
                     HTML;
             }
